@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import User from "../models/user.model.js";
 
-const JWT_SECRET = "0xW8T5XUXNjvesrGn1zCfnfileRguKpoHJMhwX6d+hA=";
+const JWT_SECRET = "Your env var";
 const protectRoute = async (req, res, next) => {
   try {
     const token = req.cookies.jwt;
